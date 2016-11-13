@@ -11,6 +11,7 @@
 - [ ] creer un main de test pour toutes les fonctions CC
 - [x] ajouter le header dans chaque fichier .c
 - [x] vérifier la présence du prototype de ft_putchar
+- [ ] ex22 test macro
 
 =============
 Project of 42
