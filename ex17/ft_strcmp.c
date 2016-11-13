@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/13 20:44:26 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 20:44:27 by valentin         ###   ########.fr       */
+/*   Created: 2016/11/13 20:04:46 by valentin          #+#    #+#             */
+/*   Updated: 2016/11/13 20:45:30 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+int			ft_strcmp(char *s1, char *s2)
 {
-	int		tmp;
+	int		i;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i])
+		i++;
+	if (s1[i] - s2[i] > 0)
+		return (1);
+	else if (s1[i] - s2[i] == 0)
+		return (0);
+	else
+		return (-1);
 }

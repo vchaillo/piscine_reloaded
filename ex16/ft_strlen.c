@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/13 20:44:26 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 20:44:27 by valentin         ###   ########.fr       */
+/*   Created: 2016/11/13 20:45:03 by valentin          #+#    #+#             */
+/*   Updated: 2016/11/13 20:45:04 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+int		ft_strlen(char *str)
 {
-	int		tmp;
+	int		len;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	len = 0;
+	if (str)
+	{
+		while (str[len])
+		len++;
+	}
+	return (len);
 }

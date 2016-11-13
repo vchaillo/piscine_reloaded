@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/13 20:44:26 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 20:44:27 by valentin         ###   ########.fr       */
+/*   Created: 2016/11/13 20:44:57 by valentin          #+#    #+#             */
+/*   Updated: 2016/11/13 23:41:24 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int		tmp;
+void		ft_putchar(char c);
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+void	ft_putstr(char *str)
+{
+	int		i;
+
+	if (str)
+	{
+		i = 0;
+		while (str[i])
+		{
+			ft_putchar(str[i]);
+			i++;
+		}
+	}
 }

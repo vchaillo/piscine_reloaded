@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/13 20:44:26 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 20:44:27 by valentin         ###   ########.fr       */
+/*   Created: 2016/11/13 20:44:37 by valentin          #+#    #+#             */
+/*   Updated: 2016/11/13 20:44:38 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+int			ft_iterative_factorial(int nb)
 {
-	int		tmp;
+	int		res;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	if (nb < 0 || nb > 12)
+		return (0);
+	res = 1;
+	while (nb > 0)
+	{
+		res *= nb;
+		nb--;
+	}
+	return (res);
 }
