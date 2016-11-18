@@ -6,7 +6,7 @@
 #    By: valentin <valentin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/15 19:30:50 by valentin          #+#    #+#              #
-#    Updated: 2016/11/18 14:07:49 by valentinchaillou89###   ########.fr        #
+#    Updated: 2016/11/19 00:25:14 by valentinchaillou89###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRC	= 	main.c \
 		ft_putchar.c \
 		ft_strlen.c \
 
-INC	=	-I inc/
+INC	=	-I ft_display_file.h
 
 OBJ	=	$(patsubst %.c, obj/%.o, $(SRC))
 

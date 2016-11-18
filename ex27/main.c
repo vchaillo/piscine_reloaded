@@ -6,7 +6,7 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/15 19:30:35 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/18 14:28:09 by valentinchaillou89###   ########.fr       */
+/*   Updated: 2016/11/19 00:23:57 by valentinchaillou89###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 int			main(int ac, char **av)
 {
 	int		fd;
-	char	buf[BUFF_SIZE];
+	int		ret;
+	char	buf[BUFF_SIZE + 1];
 
 	if (ac == 1)
 		ft_puterror("File name missing.");
@@ -27,8 +28,11 @@ int			main(int ac, char **av)
 			return (0);
 		else
 		{
-			while (read(fd, buf, BUFF_SIZE) > 0)
+			while ((ret = read(fd, buf, BUFF_SIZE)))
+			{
+				buf[ret] = '\0';
 				ft_putstr(buf);
+			}
 		}
 		close(fd);
 	}
