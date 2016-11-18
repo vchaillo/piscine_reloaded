@@ -1,36 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_puterror.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/15 19:30:35 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/18 14:28:09 by valentinchaillou89###   ########.fr       */
+/*   Created: 2016/11/15 19:30:38 by valentin          #+#    #+#             */
+/*   Updated: 2016/11/18 14:10:58 by valentinchaillou89###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_display_file.h"
 
-int			main(int ac, char **av)
+void 		ft_puterror(char *s)
 {
-	int		fd;
-	char	buf[BUFF_SIZE];
-
-	if (ac == 1)
-		ft_puterror("File name missing.");
-	else if (ac > 2)
-		ft_puterror("Too many arguments.");
-	else
-	{
-		if ((fd = open(av[1], O_RDONLY)) == -1)
-			return (0);
-		else
-		{
-			while (read(fd, buf, BUFF_SIZE) > 0)
-				ft_putstr(buf);
-		}
-		close(fd);
-	}
-	return (0);
+	write(2, s, ft_strlen(s));
+	write(2, "\n", 1);
 }

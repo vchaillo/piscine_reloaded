@@ -6,7 +6,7 @@
 #    By: valentin <valentin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/15 19:30:50 by valentin          #+#    #+#              #
-#    Updated: 2016/11/15 19:35:17 by valentin         ###   ########.fr        #
+#    Updated: 2016/11/18 14:07:49 by valentinchaillou89###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,11 @@ CFLAGS	+=	-Wall -Wextra -Werror
 RM	=	rm -Rf
 
 SRC	= 	main.c \
-		ft_puts.c
+		ft_puterror.c \
+		ft_putstr.c \
+		ft_putendl.c \
+		ft_putchar.c \
+		ft_strlen.c \
 
 INC	=	-I inc/
 
