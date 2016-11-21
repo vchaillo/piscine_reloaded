@@ -6,7 +6,7 @@
 #    By: valentin <valentin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/15 19:30:50 by valentin          #+#    #+#              #
-#    Updated: 2016/11/19 00:25:14 by valentinchaillou89###   ########.fr        #
+#    Updated: 2016/11/21 12:56:53 by valentin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,6 @@ SRC	= 	main.c \
 		ft_putchar.c \
 		ft_strlen.c \
 
-INC	=	-I ft_display_file.h
-
 OBJ	=	$(patsubst %.c, obj/%.o, $(SRC))
 
 all:   $(NAME)
@@ -33,7 +31,7 @@ $(NAME): obj $(OBJ)
 		@$(CC) $(CFLAGS) -o $@ $(OBJ)
 
 obj/%.o: %.c
-		@$(CC) $(CFLAGS) $(INC) -o $@ -c $<
+		@$(CC) $(CFLAGS) -o $@ -c $<
 		@echo "[\033[1;32m√\033[m]" $<
 
 obj:
