@@ -6,13 +6,13 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 14:05:25 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/21 12:53:36 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:53:40 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_display_file.h"
 
-void 		ft_putstr(char *s)
+void		ft_putstr(char *s)
 {
 	int		i;
 

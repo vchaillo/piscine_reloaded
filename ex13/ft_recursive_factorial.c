@@ -6,11 +6,11 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/13 20:44:43 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 20:44:44 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:46:24 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int 		ft_recursive_factorial(int nb)
+int			ft_recursive_factorial(int nb)
 {
 	if (nb < 0 || nb > 12)
 		return (0);

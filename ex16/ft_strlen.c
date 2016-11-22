@@ -6,7 +6,7 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/13 20:45:03 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 20:45:04 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:49:02 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		ft_strlen(char *str)
 	if (str)
 	{
 		while (str[len])
-		len++;
+			len++;
 	}
 	return (len);
 }

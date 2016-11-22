@@ -6,13 +6,13 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/15 19:30:38 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/21 12:53:37 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:53:16 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_display_file.h"
 
-void 		ft_puterror(char *s)
+void		ft_puterror(char *s)
 {
 	write(2, s, ft_strlen(s));
 	write(2, "\n", 1);

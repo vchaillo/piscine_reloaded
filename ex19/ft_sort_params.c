@@ -6,13 +6,13 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/13 21:11:07 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 23:45:39 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:52:53 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void		ft_putchar(char c);
 
-void 		ft_putendl(char *str)
+void		ft_putendl(char *str)
 {
 	int		i;
 
@@ -59,7 +59,7 @@ int			main(int ac, char **av)
 	if (ac > 1)
 	{
 		i = 1;
-		while (i < ac -1)
+		while (i < ac - 1)
 		{
 			if (ft_strcmp(av[i], av[i + 1]) > 0)
 			{

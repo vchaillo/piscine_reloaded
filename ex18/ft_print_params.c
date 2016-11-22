@@ -6,13 +6,13 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/13 21:11:07 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 23:41:12 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:47:12 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void		ft_putchar(char c);
 
-void 		ft_putstr(char *str)
+void		ft_putstr(char *str)
 {
 	int		i;
 

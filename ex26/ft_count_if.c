@@ -6,11 +6,11 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/15 15:51:27 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/15 16:00:55 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:57:36 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_count_if(char **tab, int(*f)(char*))
+int			ft_count_if(char **tab, int (*f)(char *))
 {
 	int		ret;
 	int		i;

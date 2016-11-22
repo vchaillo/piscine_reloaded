@@ -1,1 +1,1 @@
-ifconfig | grep HWaddr | cut -d " " -f 9
+ifconfig | grep ether | cut -d " " -f 2

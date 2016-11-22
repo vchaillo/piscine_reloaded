@@ -6,13 +6,13 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/13 20:44:19 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/13 23:45:53 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:45:38 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void		ft_putchar(char c);
 
-void	ft_is_negative(int n)
+void		ft_is_negative(int n)
 {
 	if (n < 0)
 		ft_putchar('N');

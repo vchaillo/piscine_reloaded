@@ -6,13 +6,13 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/14 00:01:03 by valentin          #+#    #+#             */
-/*   Updated: 2016/11/14 00:11:07 by valentin         ###   ########.fr       */
+/*   Updated: 2016/11/22 15:48:10 by vchaillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int 		*ft_range(int min, int max)
+int			*ft_range(int min, int max)
 {
 	int		*tab;
 	int		i;
